@@ -1,9 +1,10 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
 import client from '@/lib/contentful';
 
 const getAssetUrl = async (assetId) => {
     const asset = await client.getAsset(assetId);
-    return asset.fields.file.url; // Retorna a URL do arquivo
+    return asset.fields.file.url;
 };
 
 export async function getStaticPaths() {
@@ -48,6 +49,23 @@ export async function getStaticProps({ params }) {
 export default function PostDetails({ post, thumbnailUrl }) {
     const { title, content, excerpt, author, postedOn } = post.fields;
 
+    const options = {
+        renderNode: {
+            [BLOCKS.EMBEDDED_ASSET]: (node) => {
+                const { file, title } = node.data.target.fields;
+                return (
+                    <img
+                        src={`https:${file.url}`}
+                        alt={title || "Imagem do conteúdo"}
+                        style={{ maxWidth: "100%", height: "auto" }}
+                        className={'rounded'}
+                    />
+                );
+            },
+        },
+    };
+
+
     return (
         <div>
             <h1>{title}</h1>
@@ -57,7 +75,7 @@ export default function PostDetails({ post, thumbnailUrl }) {
             <p><strong>Resumo:</strong> {excerpt}</p>
 
             <div>
-                {documentToReactComponents(content)}
+                {documentToReactComponents(content, options)}
             </div>
         </div>
     );
