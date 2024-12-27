@@ -1,0 +1,62 @@
+[
+  {
+    "blog": {
+      "name": "Melhores Restaurantes em Dubai",
+      "author": "William Carriello",
+      "slug": "melhores-restaurantes-dubai",
+      "image": "https://fakeimg.pl/600x400?text=Melhores+Restaurantes+em+Dubai",
+      "date": "2024-12-26",
+      "content": {
+        "html": "<h1>Melhores Restaurantes em Dubai</h1><p>Dubai \u00e9 um para\u00edso culin\u00e1rio com op\u00e7\u00f5es para todos os gostos. Conhe\u00e7a os melhores lugares para desfrutar da cozinha internacional e local.</p><h2>Restaurantes de Luxo</h2><p>Experimente o famoso <strong>At.mosphere</strong>, localizado no topo do Burj Khalifa, ou o elegante <em>Nobu</em> no Atlantis, The Palm.</p><img src='https://example.com/images/nobu-dubai.jpg' alt='Restaurante Nobu em Dubai'>"
+      }
+    }
+  },
+  {
+    "blog": {
+      "name": "Descobrindo os Mercados de Dubai",
+      "author": "William Carriello",
+      "slug": "mercados-dubai",
+      "image": "https://fakeimg.pl/600x400?text=Descobrindo+os+Mercados+Dubai",
+      "date": "2024-12-20",
+      "content": {
+        "html": "<h1>Descobrindo os Mercados de Dubai</h1><p>Os mercados tradicionais de Dubai, conhecidos como souks, oferecem uma experi\u00eancia cultural \u00fanica. Explore os mercados de ouro, especiarias e tecidos.</p><h2>O Que Comprar</h2><p>N\u00e3o deixe de levar especiarias como a\u00e7afr\u00e3o, roupas tradicionais e joias exclusivas.</p><img src='https://example.com/images/souk-dubai.jpg' alt='Mercado de Especiarias em Dubai'>"
+      }
+    }
+  },
+  {
+    "blog": {
+      "name": "Aventura no Deserto de Dubai",
+      "author": "William Carriello",
+      "slug": "aventura-deserto-dubai",
+      "image": "https://example.com/images/deserto-dubai.jpg",
+      "date": "2024-12-22",
+      "content": {
+        "html": "<h1>Aventura no Deserto de Dubai</h1><p>Explore o deserto em um safari emocionante, com passeios de camelo, sandboard e jantares sob as estrelas.</p><h2>Atividades Imperd\u00edveis</h2><p>Al\u00e9m do safari, aproveite para fazer fotos incr\u00edveis e vivenciar a cultura bedu\u00edna.</p><img src='https://example.com/images/safari-deserto.jpg' alt='Safari no Deserto de Dubai'>"
+      }
+    }
+  },
+  {
+    "blog": {
+      "name": "Hospedagem em Dubai: Guia Completo",
+      "author": "William Carriello",
+      "slug": "hospedagem-dubai",
+      "image": "https://example.com/images/hospedagem-dubai.jpg",
+      "date": "2024-12-25",
+      "content": {
+        "html": "<h1>Hospedagem em Dubai: Guia Completo</h1><p>Encontre as melhores op\u00e7\u00f5es de hot\u00e9is, desde os mais luxuosos at\u00e9 acomoda\u00e7\u00f5es econ\u00f4micas.</p><h2>Hot\u00e9is de Luxo</h2><p>Se procura luxo, o Burj Al Arab \u00e9 a escolha ideal, mas h\u00e1 op\u00e7\u00f5es mais acess\u00edveis com \u00f3tima qualidade.</p><img src='https://example.com/images/burj-al-arab.jpg' alt='Burj Al Arab em Dubai'>"
+      }
+    }
+  },
+  {
+    "blog": {
+      "name": "Dicas para Economizar em Dubai",
+      "author": "William Carriello",
+      "slug": "dicas-economizar-dubai",
+      "image": "https://example.com/images/economizar-dubai.jpg",
+      "date": "2024-12-24",
+      "content": {
+        "html": "<h1>Dicas para Economizar em Dubai</h1><p>Descubra como aproveitar Dubai sem gastar muito. Veja dicas de transporte, hospedagem e alimenta\u00e7\u00e3o econ\u00f4mica.</p><h2>Transportes</h2><p>Use o metr\u00f4 para economizar e aproveitar vistas incr\u00edveis da cidade.</p><img src='https://example.com/images/metro-dubai.jpg' alt='Metr\u00f4 de Dubai'>"
+      }
+    }
+  }
+]
