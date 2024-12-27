@@ -1,23 +1,31 @@
 import Link from 'next/link';
-import posts from '../data/posts.json';
+import client from '../lib/contentful';
 
-export default function Home() {
-  return (
-      <div>
-        <h1>Blog</h1>
-        <ul>
-          {posts.map(({ blog }) => (
-              <li key={blog.slug}>
-                <Link href={`/post/${blog.slug}`} legacyBehavior>
-                  <a>
-                    <img src={blog.image} alt={blog.name} width="200" />
-                    <h2>{blog.name}</h2>
-                    <p>Por {blog.author} - {new Date(blog.date).toLocaleDateString()}</p>
-                  </a>
-                </Link>
-              </li>
-          ))}
-        </ul>
-      </div>
-  );
+export async function getStaticProps() {
+    const entries = await client.getEntries({
+        content_type: 'blogPost',
+    });
+
+    return {
+        props: {
+            posts: entries.items,
+        },
+    };
+}
+
+export default function Home({ posts }) {
+    return (
+        <div>
+            <h1>Blog Posts</h1>
+            {posts.map((post) => (
+                <div key={post.sys.id}>
+                    <Link href={`/blog/${post.fields.slug}`} legacyBehavior>
+                        <a>
+                            <h2>{post.fields.title}</h2>
+                        </a>
+                    </Link>
+                </div>
+            ))}
+        </div>
+    );
 }
