@@ -1,6 +1,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 import client from '@/lib/contentful';
+import {NavBar} from "@/components/navbar";
 
 const getAssetUrl = async (assetId) => {
     const asset = await client.getAsset(assetId);
@@ -68,6 +69,7 @@ export default function PostDetails({ post, thumbnailUrl }) {
 
     return (
         <div>
+<NavBar />
             <h1>{title}</h1>
             {thumbnailUrl && <img src={thumbnailUrl} alt={title} />}
             <p><strong>Autor:</strong> {author[0]}</p>
